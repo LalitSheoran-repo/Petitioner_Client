@@ -1,7 +1,7 @@
 import React , {useEffect} from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import CustomSelect from './CustomSelect'
-import { getCategories } from '../../Interface/index'
+import { getCategories } from '../../Interface/apiConnection'
 import { storeCategories } from '../../Redux/Actions/petition'
 
 const FirstStep = (props) => {

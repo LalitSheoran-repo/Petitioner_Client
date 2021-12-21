@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 import { useDispatch, useSelector } from 'react-redux'; 
 import CustomSelect from './CustomSelect'
-import { getRecipients } from '../../Interface/index'
+import { getRecipients } from '../../Interface/apiConnection'
 import { storeRecipients } from '../../Redux/Actions/petition'
 
 const Tip = [

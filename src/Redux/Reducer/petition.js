@@ -1,4 +1,4 @@
-import { PETITIONRECIPIENT, PETITIONCATEGORY, PETITIONDATA} from '../constants/petitionConstants';
+import { PETITIONRECIPIENT, PETITIONCATEGORY, PETITIONDATA} from '../Constants/petitionConstants';
 
 const initialState = {
     recipients: [],

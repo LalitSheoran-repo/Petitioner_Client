@@ -27,7 +27,7 @@ const Home = () => {
                 
                 <p>Victories everyday</p>
                 
-                <button className="petition-btn" onClick={handlePetitionClick}> Start A Petition </button>
+                <button className="petition-btn btn btn-outline-danger btn-lg" onClick={handlePetitionClick}> Start A Petition </button>
             </div>
         </div>
     )

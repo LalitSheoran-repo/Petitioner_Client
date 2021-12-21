@@ -1,29 +1,28 @@
 
-  /* Heading style */
-  .topmost-heading{
-    position: relative;
+  .topmost-heading {
     padding: 2rem;
   }
-
-
   /* Tab Container */
-  .Tabs {
+  .Mypetition {
     width: 100%;
     height: auto;
     padding: 0rem 1rem;
     color: #020303;
-    border-bottom-style: solid;
-    border-bottom-color: rgba(0,0,0,.1);
+  
     @media (max-width: 769px) {
       padding: 2rem 0;
     }
   
   
   }
+  .tag{
+      width: 50%;
+      margin-bottom: 1rem;
+  }
   
   /* Tab Navigation */
   ul.nav {
-    margin-left: 20rem;
+    margin-left: 24rem;
     margin-top: 23px;
     align-items: center;
     @media (max-width: 768px) {
@@ -32,7 +31,7 @@
   }
   ul.nav li {
     color: rgb(115, 114, 115);
-    font-size: 15px;
+    font-size: 20px;
     font-weight:bold;
     padding-left: 2rem;
     list-style: none;
@@ -50,16 +49,25 @@
   }
   
   /* First and Second Tab Styles */
-  .FirstTab p,
-  .SecondTab p ,
-  .ThirdTab p,
-  .Menu p{
+  .Signed p,
+  .Started p{
     font-size: 2rem;
     text-align: center;
   }
   
-  
-.discoverpetition{
-  margin-left: 350px;
+  .location{
+      font-size: 20px;
+  }
+
+.editprofile{
+    background-color: white;
+    font-weight: bold;
+    padding: 5px 18px;
+    font-size: 18px;
+    border-radius: 9px;
+}
+
+.Petitionername{
     margin-top: -27px;
+    text-align: center;
 }

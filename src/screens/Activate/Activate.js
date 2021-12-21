@@ -6,7 +6,7 @@ import { useDispatch } from 'react-redux';
 import { useHistory} from 'react-router-dom';
 import { Link, Redirect } from 'react-router-dom';
 import { activate } from '../../Redux/Actions/auth';
-import { activateAcc } from '../../Interface/index';
+import { activateAcc } from '../../Interface/apiConnection';
 import './styles.css';
 
 const Activate = ({ match }) => {

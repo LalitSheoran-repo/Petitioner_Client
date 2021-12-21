@@ -6,8 +6,8 @@ import { composeWithDevTools } from "redux-devtools-extension";
 import thunk from 'redux-thunk';
 
 import 'react-toastify/dist/ReactToastify.css';
-import { reducers } from './reducers';
-import App from './App';
+import { reducers } from './Redux/Reducer';
+import App from './app/App';
 
 //bootstrap import
 import 'bootstrap/dist/css/bootstrap.min.css';

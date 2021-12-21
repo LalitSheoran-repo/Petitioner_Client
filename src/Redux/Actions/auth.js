@@ -1,5 +1,5 @@
 import { AUTH, SIGNUP} from '../Constants/actionTypes';
-import * as api from '../../Interface/index';
+import * as api from '../../Interface/apiConnection';
 import { toast } from 'react-toastify';
 
 export const login = (formData, history) => async (dispatch) => {

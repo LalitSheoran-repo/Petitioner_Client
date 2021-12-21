@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 //import Axios from 'axios';
 
-import * as api from '../../Interface/index';
+import * as api from '../../Interface/apiConnection';
 import { savePetitionData } from '../../Redux/Actions/petition';
 import ProgressStep from './ProgressStep'
 import FirstStep from './FirstStep';
