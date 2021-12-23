@@ -19,3 +19,16 @@ export const fbLogin = (userID, accessToken) => API.post('/user/fblogin', {userI
 export const getRecipients = () => API.get('/user/petition-recipients');
 export const getCategories = () => API.get('/user/petition-categories');
 export const submitPetition = (petitionData) => API.post('/user/submit-petition', petitionData);
+export const fetchPetitionFeaturedList = () => API.get('/petition-catalog-trending');
+
+//fetch recent petitions
+export const fetchPetitionRecentList = () => API.get('/petition-catalog-recent');
+
+//fetch petitions with victory
+export const fetchPetitionVictoryList = () => API.get('/petition-catalog-victory');
+
+//fetch petitions started by a logged in user - for 'My petitions' started tab
+export const fetchPetitionsStartedByMember = (userId) => API.get(`/user/${userId}/started-petitions`);
+
+//fetch petitions signed by a logged in user - for 'My petitions' signed tab
+export const fetchPetitionsSignedByMember = (userId) => API.get(`/user/${userId}/signed-petitions`);

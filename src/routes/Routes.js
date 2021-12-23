@@ -30,7 +30,7 @@ export const Routes = () => (
                 <Route path='/petition/review' exact component={PetitionReviewPage} />
                 <Route path='/user/activate/:token' exact render={props => <Activate {...props} />} />
                 <Route path = '/profile' exact component={UserProfile} />
-                <Route path = '/petitionDetail' exact component={PetitionDetail} />
+                <Route path = '/petitionDetail/:id' exact component={PetitionDetail} />
                 <Route path = '/signupDM' exact component={SignupDM} />
                 <Route path = '/browse' exact component={BrowsePetition} />
                 <Route path = '/my-petition' exact component={Mypetitions} />

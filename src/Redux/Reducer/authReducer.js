@@ -6,7 +6,7 @@ const  initialState = {
     isLoggedIn: false
 }
 
-export default (state = initialState, action) => {
+export const authReducer = (state = initialState, action) => {
     switch (action.type) {
         case AUTH:
             //console.log(action.data.resultData);

@@ -6,7 +6,7 @@ const initialState = {
     content: {}
 }
 
-export default (state = initialState, action) => {
+export const petitionReducer = (state = initialState, action) => {
     //console.log("in reducer");
     switch(action.type) {
         case PETITIONDATA:

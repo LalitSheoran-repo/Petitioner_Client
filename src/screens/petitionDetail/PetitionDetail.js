@@ -1,7 +1,23 @@
+import { useEffect } from "react";
+import {useParams} from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+
+import { petitionFeaturedListFetch } from "../../Redux/Actions/petitionListActions";
+
 import "./petitionDetail.css";
 import petPic from "../../images/facebook.jpg";
 
 const PetitionDetail = () => {
+  const dispatch = useDispatch();
+
+  const id = useParams();
+
+  const allPosts = useSelector((state) => state.petitionList.featured);
+
+  useEffect(() => {
+    dispatch(petitionFeaturedListFetch());
+  }, [dispatch]);
+
   return (
     <>
       <div>
