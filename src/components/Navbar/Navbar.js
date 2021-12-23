@@ -14,7 +14,7 @@ import {
 import MenuIcon from "@material-ui/icons/Menu";
 import SearchIcon from "@material-ui/icons/Search";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import decode from "jwt-decode";
 import useStyles from "./styles";
 
@@ -27,7 +27,7 @@ const Navbar = (props) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const isMedium = useMediaQuery(theme.breakpoints.down("md"));
-
+  const isLoggedIn = useSelector(state => state.auth.isLoggedIn)
   const dispatch = useDispatch();
   const location = useLocation();
 
@@ -79,8 +79,17 @@ const Navbar = (props) => {
     setAnchorEl(null);
   };
 
-  const handleButtonClick = (pageURL) => {
+  
+  const handleButtonClick = pageURL => {
     //console.log(pageURL);
+    if(pageURL==='/start-a-petition' || pageURL==='/my-petition')
+    {
+        if(isLoggedIn)
+        history.push(pageURL);
+        else
+        history.push('/auth');
+    }
+    else
     history.push(pageURL);
   };
 
